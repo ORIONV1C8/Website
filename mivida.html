@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tab Title</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="kanji.ico">
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<style type="text/css">
+			.thumb {
+				width: 20%;
+				transition: 300ms all ease;
+			}
+			.grande {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="mivida.html">Mi Vida</a></li>
+					<li><a href="nosotros.html">Sobre Nosotros</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article class="h2">
+			<h2>
+				Esta pagina es mi cuenta
+			</h2>
+			<p>
+				Nombre: <b>Eduardo Juncal</b><br>
+			</p>
+		</article>
+		<form>
+			<input type="button" value="Cambio de Tamaño" onclick="zoom();">
+			<img id="thumb" class="thumb" src="https://simg-ssl.duolingo.com/avatars/737441527/kkOUYFPINo/xxlarge">
+		</form>
+		<script type="text/javascript">
+			var elemento = document.createElement("h1"),
+			contenido = document.createTextNode("Aquí pondré todo lo relacionado con mi persona.");
+			elemento.appendChild(contenido);
+
+			var padre = document.getElementsByTagName("h2")[0].parentNode,
+			hijo = document.getElementsByTagName("h2")[0];
+			padre.replaceChild(elemento, hijo);
+
+			var padrastro = document.getElementsByTagName("p")[0].parentNode;
+			hijastro = document.getElementsByTagName("p")[0];
+			padrastro.removeChild(hijastro);
+			var zoom = function(){
+				var thumb = document.getElementById("thumb");
+				if (thumb.className == "thumb") {
+				thumb.className = "thumb grande";
+			} else {
+				thumb.className = "thumb";
+				}
+			}
+		</script>
+	</body>
+</html>

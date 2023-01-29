@@ -1,0 +1,94 @@
+/* https://htmlcolorcodes.com/color-chart/ */ 
+body {
+	margin: 50px;
+	background: url(patron.jpg);
+	background-attachment: fixed;
+}
+table, center, header, .main, .h2, .nosotros, aside, footer p, form {
+	margin-block: 25px;
+	background: hsl(192, 15%, 96%);
+	padding: 15px;
+	border: 10px hsl(204, 8%, 81%) solid;
+	border-radius: 40px;
+}
+header {
+	font-family: fantasy;
+}
+footer {
+	font-family: monospace;
+}
+.main p, h2 {
+	font-family: cursive;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: hsl(204, 3%, 40%);
+}
+table a {
+	color: hsl(340, 82%, 52%);
+}
+li a:hover {
+	text-decoration: underline;
+	font-size: 30px;
+	color: hsl(184, 5%, 27%);
+}
+img {
+	width: 32%;
+	margin: 5px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px black;
+}
+header img {
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+ul {
+	list-style-position: inside;
+	list-style: none;
+}
+table td {
+	border: 2px solid #000;
+	padding: 25px;
+}
+table tr:hover {
+	background: hsl(340, 80%, 94%);
+}
+table td:hover {
+	background: hsl(339, 81%, 85%);
+}
+.proyecto {
+	width: 25%;
+	float: left;
+}
+label {
+	font-size: 12px;
+	display: block;
+	width: 100%;
+}
+input, textarea {
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid lightgray;
+}
+input:focus, textarea:focus {
+	border: 1px solid #3498DB;
+	outline:none
+}
+textarea {
+	resize: vertical;
+	max-height: 300px;
+	min-height: 50px;
+}
+input[type="submit"] {
+	margin-bottom: 0px;
+	background: hsl(104, 70%, 63%);
+	color: white;
+	border: none;
+}
+input[type="submit"]:hover {
+	background: hsl(104, 60%, 63%);
+	cursor: pointer;
+}
